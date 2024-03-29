@@ -1,3 +1,5 @@
+package Week1;
+
 public class P2 {
     public static int minusSum(int[] arr){
         int len = arr.length;

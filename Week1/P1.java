@@ -1,3 +1,5 @@
+package Week1;
+
 public class P1 {
     public static int largestNum(int[] arr){
         int max = arr[0];
