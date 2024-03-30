@@ -24,7 +24,7 @@ public class P1 {
         return maxIndex;
     }
     public static void main(String[] args ){
-        int[] arr = {7, 6, 9, 3 ,2 ,5};
+        int[] arr = {7, 6, 9, 3 ,2 ,5, 11};
         int maxIndex = largestNum(arr);
         System.out.println("The maximum value in the array is: " + arr[maxIndex]);
         int secMaxIndex = secondLargestNum(arr);

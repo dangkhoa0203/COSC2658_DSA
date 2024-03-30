@@ -11,18 +11,17 @@ public class P2 {
         return expectedSum - actualSum;
     }
     public static int hashing(int[] arr){
-        int num = 0;
         int size = arr.length;
         boolean[] arr1 = new boolean[size];
         for (int i : arr){
             arr1[i] = true;
         }
         for (int i = 0; i < arr1.length; i++){
-            if(arr1[i] == false){
-                num = i;
+            if (!arr1[i]){
+                return i;
             }
         }
-        return num;
+        return size;
     }
     public static void main(String[] args){
         int[] arr = {0, 2, 3, 4, 1};
