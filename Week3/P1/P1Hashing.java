@@ -2,7 +2,7 @@ package Week3.P1;
 
 import java.util.HashSet;
 
-public class P2Hashing {
+public class P1Hashing {
     public static void main(String[] args) {
         Node n1, n2, n3, n4, n5;
 
@@ -15,13 +15,21 @@ public class P2Hashing {
         n1 = new Node(1, n2);
         n5.next = n2;
 
+        Node node = n1;
+        int count = 0;
+        System.out.println("Before loop removal");
+        while (count < 10 && node != null) {
+            System.out.println(node.data);
+            node = node.next;
+            count++;
+        }
         // Detect and remove the loop
         removeLoop(n1);
 
         // Now, if I traverse this list 10 times OR reach the end
         // I will encounter some nodes more than once
-        Node node = n1;
-        int count = 0;
+        node = n1;
+        count = 0;
         System.out.println("After loop removal");
         while (count < 10 && node != null) {
             System.out.println(node.data);
